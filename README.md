@@ -2,8 +2,8 @@
 
 
 * [dembo2017extremal](https://arxiv.org/abs/1503.03923) (extremal cuts)
-* [sen2017optimization](https://arxiv.org/abs/1606.02365) Extending extremal cut paper to max $k$ xor, max $q$-cut, etc
-* [Chen_2019](https://arxiv.org/abs/1707.05386) (local algorithms are suboptimal on MAX $k$ CUT, optimal value is related to parisi constant)
+* [sen2017optimization](https://arxiv.org/abs/1606.02365) Extending extremal cut paper to max $$k$$ xor, max $$q$$-cut, etc
+* [Chen_2019](https://arxiv.org/abs/1707.05386) (local algorithms are suboptimal on MAX $$k$$ CUT, optimal value is related to parisi constant)
 * the actual original plots getting 0.7632 for SK [Crisanti_2002](https://arxiv.org/abs/cond-mat/0111037)
 * [Auffinger_2014](https://arxiv.org/abs/1402.5132) the parisi functional is convex so it has a unique minimum
 * [Jagannath_2015](https://arxiv.org/abs/1502.04398) alternate approach to calculating parisi formula at zero temp with dynamic programming, see [talk here](https://cims.nyu.edu/~aukosh/slides/cornelltalk.pdf)
