@@ -1,6 +1,7 @@
+
 Notes about spin glasses, the Parisi variational formula, and CSPs
 
-## The optimal value of a CSP can be represented as the ground state energy of a spin glass
+## The optimal value of a CSP is the ground state energy of a spin glass
 
 * [dembo2017extremal](https://arxiv.org/abs/1503.03923) (extremal cuts)
 * [sen2017optimization](https://arxiv.org/abs/1606.02365) Extending extremal cut paper to max $$k$$ xor, max $$q$$-cut, etc
@@ -28,7 +29,7 @@ Notes about spin glasses, the Parisi variational formula, and CSPs
 * the proof the parisi functional for mixed spin models [paper here](https://arxiv.org/pdf/1112.4409.pdf)
 
 
-## Replica symmetry breaking
+## Notes on Replica symmetry breaking
 
 If there are jumps in the function provided to the Parisi functional, we call it replica symmetry breaking at each jump point.
 
