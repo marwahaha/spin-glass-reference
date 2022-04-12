@@ -45,4 +45,4 @@ If the Parisi minimizer is $$0$$-RSB or Full-RSB, then there is no overlap gap p
 
 
 
-More to add? Email me at kmarw@uchicago.edu.
+More to add? Email me at [kmarw@uchicago.edu](mailto:kmarw@uchicago.edu).
