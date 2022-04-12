@@ -1,7 +1,6 @@
-# parisi-reference
+Notes about spin glasses, the Parisi variational formula, and CSPs
 
-
-## Many CSP optimal values can be represented as ground state energies to spin glasses.
+## The optimal value of a CSP can be represented as the ground state energy of a spin glass
 
 * [dembo2017extremal](https://arxiv.org/abs/1503.03923) (extremal cuts)
 * [sen2017optimization](https://arxiv.org/abs/1606.02365) Extending extremal cut paper to max $$k$$ xor, max $$q$$-cut, etc
@@ -33,15 +32,15 @@
 
 If there are jumps in the function provided to the Parisi functional, we call it replica symmetry breaking at each jump point.
 
-### What is $k$-RSB?
+### What is $$k$$-RSB?
 
-* If the minimizer to the Parisi functional is some function $f$ with **exactly** $k$ jumps, then we call it $k$-RSB. (For example, 1-RSB, 2-RSB, ...)
-* If there are an infinite number of jumps, we call it $\infty$-RSB. This could be countable (in $\mathbb{N}$) or uncountable (in $\mathbb{R}$).
+* If the minimizer to the Parisi functional is some function $$f$$ with **exactly** $$k$$ jumps, then we call it $$k$$-RSB. (For example, 1-RSB, 2-RSB, ...)
+* If there are an infinite number of jumps, we call it $$\infty$$-RSB. This could be countable (in $$\mathbb{N}$$) or uncountable (in $$\mathbb{R}$$).
 * If it's uncountably infinite, we call it Full-RSB.
 
 ### How does this relate to overlap gap property?
 
-If the Parisi minimizer is $0$-RSB or Full-RSB, then there is no overlap gap property. Otherwise, there is!
+If the Parisi minimizer is $$0$$-RSB or Full-RSB, then there is no overlap gap property. Otherwise, there is overlap gap property!
 
 
 
