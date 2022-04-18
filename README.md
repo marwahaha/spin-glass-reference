@@ -7,15 +7,15 @@ Notes about spin glasses, the Parisi variational formula, and CSPs
 This is typically modeled by a probability distribution on the overall state of the particles $$\sigma \in\{-1,+1\}^N$$. Each of the particles $$\sigma_i$$ are also called **sites**.
 
 The Hamiltonian is
-$$$$
+$$
 H(\sigma) = \sum_{k=1}^\infty c_k \langle J^{(k)}, \sigma^{\otimes k} \rangle
-$$$$
+$$
 where we have fixed parameters $$c_k \in \mathbb{R}$$, and a random **disorder matrix** or **interaction matrix** $$J^{(k)}$$. This is a random symmetric Gaussian tensor of order $$k$$. (If $$J^{(k)}$$ is a random matrix of Booleans instead of Gaussians, we say this is "boolean disorder". The behavior is qualitatively the same as for "Gaussian disorder")
 
 Physical states can be thought of as samples from the Gibbs distribution, which weighs the likelihood you are likely to see different spin configurations based on relative energies and a temperature parameter. Given a inverse temperature $$\beta$$, the probability  of a given configuration $$\sigma$$ is
-$$$$
+$$
 \Pr[\sigma] \propto e^{\beta H(\sigma)}.
-$$$$
+$$
 
 ## Why spin glasses?
 
@@ -36,9 +36,9 @@ We usually consider a spin glass with the following characteristics:
 A **pure** spin glass (of level $$p$$) only has $$p$$-body interactions. By contrast, a **mixed-spin** spin glass could have interactions of any number of terms.
 
 We sometimes think about it with the mixture polynomial $$\xi(s)$$:
-$$$$
+$$
 \xi(s) = \sum_{k=1}^\infty c_k s^k
-$$$$
+$$
 
 With a pure spin spin glass, $$c_k = 0$$ except when $$k = p$$.
 
@@ -57,9 +57,9 @@ SK [] used the replica method to calculate SK free energy. But it didn't work at
 What is replica symmetry breaking? It's the precise structure of overlap matrix .... @Juspreet
 
 In general, we can calculate the minimum ground state energy density to a spin glass using the Parisi variational principle. We call $$P(f)$$ the *Parisi functional*:
-$$$$
+$$
 GSDE = min_{f} P(f)
-$$$$
+$$
 
 If there are jumps in the minimizing function, we call it **replica symmetry breaking**.
 
