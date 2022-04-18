@@ -5,15 +5,18 @@
 This is typically modeled by a probability distribution on the overall state of the particles $$\sigma \in\{-1,+1\}^N$$. Each of the particles $$\sigma_i$$ are also called **sites**.
 
 The Hamiltonian is
-$$\begin{align*}
+
+$$
 H(\sigma) = \sum_{k=1}^\infty c_k \langle J^{(k)}, \sigma^{\otimes k} \rangle
-\end{align*}$$
+$$
+
 where we have fixed parameters $$c_k \in \mathbb{R}$$, and a random **disorder matrix** or **interaction matrix** $$J^{(k)}$$. This is a random symmetric Gaussian tensor of order $$k$$. (If $$J^{(k)}$$ is a random matrix of Booleans instead of Gaussians, we say this is "boolean disorder". The behavior is qualitatively the same as for "Gaussian disorder")
 
 Physical states can be thought of as samples from the Gibbs distribution, which weighs the likelihood you are likely to see different spin configurations based on relative energies and a temperature parameter. Given an inverse temperature $$\beta$$, the probability  of a given configuration $$\sigma$$ is
-$$\begin{align*}
+
+$$
 \Pr[\sigma] \propto e^{\beta H(\sigma)}.
-\end{align*}$$
+$$
 
 ## Why spin glasses?
 
@@ -31,9 +34,10 @@ We usually consider a spin glass with the following characteristics:
 A **pure** spin glass (of level $$p$$) only has $$p$$-body interactions. By contrast, a **mixed-spin** spin glass could have interactions of any number of terms.
 
 We can see this with the mixture polynomial $$\xi(s)$$:
-$$\begin{align*}
+
+$$
 \xi(s) = \sum_{k=1}^\infty c^2_k s^k
-\end{align*}$$
+$$
 
 With a pure spin spin glass, $$c_k = 0$$ except when $$k = p$$.
 
@@ -52,9 +56,10 @@ Sherrington and Kirkpatrick [[SK75]](https://journals.aps.org/prl/abstract/10.11
 To fix this, Parisi [[Par80]](https://iopscience.iop.org/article/10.1088/0305-4470/13/4/009) introduced the "RSB ansatz" (aka Parisi ansatz). We can use this to describe the free energy at any temperature using a variational principle.
 
 How does this work? We call $$P(\gamma)$$ the *Parisi functional*, where $$\gamma: [0,1] \to \mathbb{R}$$ is any nondecreasing function ($$\gamma$$ is called the "functional order parameter").
-$$\begin{align*}
+
+$$
 GSED = min_{\gamma} P(\gamma)
-\end{align*}$$
+$$
 
 If $$\gamma$$ is constant, this is **replica symmetric**.
 If there is a point where $$\gamma$$ is increasing, we call it **replica symmetry breaking**.
