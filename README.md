@@ -49,7 +49,7 @@ Think of the sphere as a relaxation of the hypercube. The ground state energy fo
 
 
 
-# Spin glass energy, PVP, RSB
+## Spin glass energy, PVP, RSB
 
 Sherrington and Kirkpatrick [[SK75]](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.35.1792)  heuristically computed the free energy of a simple nontrivial spin glass using the "replica method". However, their "RS ansatz" is not physical at low temperature.
 
@@ -68,17 +68,6 @@ If there are *exactly* $$k$$ jumps, then we call it $$k$$-RSB. (For example, 1-R
 
 * If there are an infinite number of increasing points, we call it $$\infty$$-RSB. There could be countably many jumps (in $$\mathbb{N}$$) or uncountably many (in $$\mathbb{R}$$).
 * If $$\gamma$$ is strictly increasing in $$[0,1]$$, we call it Full-RSB or fRSB.
-
-## How does this relate to OGP (overlap gap property)?
-
-What is an OGP? See [[Gamarnik21]](https://arxiv.org/abs/2109.14409) for a reference.
-
-If there is an OGP, then algorithms that do not see the whole graph (i.e., **local algorithms** with at most $$\log N$$ depth) will not find optimal solutions. In fact, all algorithms that are insensitive to small changes in the input will be obstructed by an OGP. See [[CLSS21]](https://arxiv.org/abs/2108.06049).
-
-For the spin glass problems, an OGP means there is some interval $$[a,b]$$ where $$0 < a < b < 1$$ where $$\gamma$$ is constant, non-zero and strictly less than 1. We typically think about OGP at low temperature.
-
-
-**The key takeaway:** If the Parisi minimizer is $$0$$-RSB or fRSB, then there is no overlap gap property. Otherwise, there is an OGP!
 
 # CSPs and diluted spin glasses
 
@@ -113,12 +102,22 @@ This is known in several settings:
 * [[PT14]](https://arxiv.org/abs/math/0405357) - This paper _upper bounds_ the limiting value of the fraction of satisfied clauses of _any_ CSP with $$\alpha n$$ clauses ($$\alpha$$ is any constant) by the free energy of a peculiar dense mean-field model (which can be seen as a slight generalization of the SK model). The latter model's free energy is explicitly calculated in _any_ regime (RS/$$k$$-RSB/fRSB). However, the paper cannot provide lower bounds, and so it does not capture the exact limiting value.
 
 ## OGPs for CSPs
+What is an OGP? See [[Gamarnik21]](https://arxiv.org/abs/2109.14409) for a reference.
+
+If there is an OGP, then algorithms that do not see the whole graph (i.e., **local algorithms** with at most $$\log N$$ depth) will not find optimal solutions. In fact, all algorithms that are insensitive to small changes in the input will be obstructed by an OGP. See [[CLSS21]](https://arxiv.org/abs/2108.06049).
+
+For the spin glass problems, an OGP means there is some interval $$[a,b]$$ where $$0 < a < b < 1$$ where $$\gamma$$ is constant, non-zero and strictly less than 1. We typically think about OGP at low temperature.
+
+**A key takeaway:** If the Parisi minimizer is $$0$$-RSB or fRSB, then there is no overlap gap property. Otherwise, there is an OGP!
+
 We also know that some CSPs exhibit an OGP, because the associated dense spin glass model does. This connection is usually done via the Guerra-Tonnineli interpolation.
 
 * [[CGPR19]](https://arxiv.org/abs/1707.05386) - Max Cut of $$k$$-uniform hypergraphs for $$k \ge 4$$ even exhibits an OGP a.a.s across all instances.
 * [[CLSS21]](https://arxiv.org/abs/2108.06049) -  Max $$k$$-XOR exhibits an OGP a.a.s across all instances.
 
 From [[CLSS21]](https://arxiv.org/abs/2108.06049), it turns out that OGPs obstruct local classical _and_ local quantum algorithms from well-approximating random MAX $$k$$-XOR instances.
+
+
 
 # What we know about spin glass models
 
