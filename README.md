@@ -124,13 +124,14 @@ From [[CLSS21]](https://arxiv.org/abs/2108.06049), it turns out that OGPs obstru
 ## Example: The SK Model
 This is the canonical spin glass people study; i.e. the pure model at $$p=2$$.
 
-At high temperature (when $$\beta < \beta_c$$), we know the SK Model is $$RS$$ (or 0-RSB) [[Bol18]](https://arxiv.org/abs/1809.07972). There exists an efficient algorithm to output solutions to the free energy. this is done by solving the TAP equations iteratively by Bolthausen [[Bol12]](https://arxiv.org/pdf/1201.2891.pdf).
+At high temperature (when $$\beta < \beta_c$$), we know the SK Model is $$RS$$ (or 0-RSB) [[ALR87]](https://cmsr.rutgers.edu/images/people/lebowitz_joel/publications/jll.pub_286.pdf), [[Bol18]](https://arxiv.org/abs/1809.07972). There exists an efficient algorithm to output solutions to the free energy. this is done by solving the TAP equations iteratively by Bolthausen [[Bol12]](https://arxiv.org/pdf/1201.2891.pdf).
 
 At low temperature (when $$\beta > \beta_c$$), the SK Model is $$\infty$$-RSB [[ACZ20]](https://arxiv.org/abs/1703.06872). There exists an efficient algorithm to output solutions to the free energy. Assuming fRSB, this is done by an AMP algorithm that discretizes the dynamics of the Auffinger-Chen Principle rewrite of the Parisi-Variational Principle. This algorithm is due to Montanari [[Mon19]](https://arxiv.org/abs/1812.10897).
 
 Some other cool papers:
 * [[Crisanti 2002]](https://arxiv.org/abs/cond-mat/0111037) shows the actual original plots getting 0.7632 for SK.
 * [[Parisi 1980]](https://iopscience.iop.org/article/10.1088/0305-4470/13/4/009): The original Parisi paper approximating the SK model, with a good visual of replica symmetry breaking.
+* [[FA85]](https://iopscience.iop.org/article/10.1088/0305-4470/19/9/033/meta): Early work showing SK has a correspondence with MaxCut
 
 ##  Mixed even-spin Ising models
 Some results for SK generalize to mixed-spin models, especially if they are *even* (i.e. $$c_k = 0$$ when $$k$$ is odd).
@@ -138,6 +139,7 @@ Some results for SK generalize to mixed-spin models, especially if they are *eve
 * For pure models when $$k \ge 4$$ even, there is a coupled-OGP: [[CGPR19]](https://arxiv.org/abs/1707.05386)
 * For mixed-spin models of even spin, the number of configurations at each energy level is known: [[CHL17]](https://arxiv.org/abs/1609.04368)
 * [[Panchenko 2011]](https://arxiv.org/pdf/1112.4409.pdf) extends Parisi's proof from $$p=2$$ to general mixed even-spin Ising models.
+* See also [[AT16]](https://link.springer.com/article/10.1007/s00440-015-0691-z), [[AC15]](https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.21617) for more about the phase diagram.
 
 
 ## General Ising models
@@ -161,9 +163,10 @@ A rewrite of the Parisi-Variational Principle in terms of a _functional_ min-max
 * Pure Spherical $$p$$-spin glass is 2-RSB at $$\beta = \infty$$ [[AZ18]](https://arxiv.org/pdf/1802.02991.pdf). (for all $$p \geq 2$$???)
 * The analytic behavior of the mixture polynomial determines when the mixed spherical $$p$$-spin glass is fRSB [[Proposition-1, Sub21]](https://arxiv.org/abs/1812.04588).
 * The TAP equations for mixed spherical $$p$$-spin glasses are to be solved on the _ball_ $$\mathcal{B}^n$$ (and not the sphere) [[Sub21a]](https://arxiv.org/abs/2111.07132), [[Sub21b]](https://arxiv.org/abs/2111.07134).
-* The Free-Energy "landscape" of Spherical $$p$$-spin glasses (mixed and pure) is well understood by studying the first two moments of the number of critical points of the Hessian using the Kaz-Rice formula as a dictionary between the geometry of the problem at hand and the random matrix (the Hessian) [[Sub16]](https://arxiv.org/abs/1804.10576).
+* The Free-Energy "landscape" of spherical $$p$$-spin glasses (mixed and pure) is well understood by studying the first two moments of the number of critical points of the Hessian using the Kac-Rice formula as a dictionary between the geometry of the problem at hand and the random matrix (the Hessian) [[Sub16]](https://arxiv.org/abs/1804.10576).
 * An explicit and analytic expression for the free energy is given using a nice simplification of the _Crisanti-Sommers_ representation known as the Chen-Sen representation [[CS17]](https://arxiv.org/abs/1512.08492). In the event of fRSB, this formula simply becomes an integral over (roughly) the mixture polynomial [[Proposition-2, Sub21]](https://arxiv.org/pdf/1812.04588.pdf).
-
+* [[JB21]](https://arxiv.org/abs/2104.08299) study a shattering transition.
+* See also [[AB13]](https://projecteuclid.org/journals/annals-of-probability/volume-41/issue-6/Complexity-of-random-smooth-functions-on-the-high-dimensional-sphere/10.1214/13-AOP862.pdf) and [[ABC13]](https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpa.21422) for other papers using the Kac-Rice approach.
 
 
 # Open questions
@@ -188,8 +191,13 @@ This section is still in progress.
     * [[El Alaoui-Montanari-Sellke'20]](https://arxiv.org/abs/2001.00904) same, but for Ising spins: message passing algorithm to find near ground states of fRSB Ising spin glasses
     * [[El Alaoui-Montanari'20]](https://arxiv.org/abs/2009.11481) Implementation of the ideas above. Numerics for 2-XORSAT (SK) and 3-XORSAT (3-spin glass), the latter using [auffinger2016parisi](https://arxiv.org/abs/1606.05335) method.
     * [claes2021instance](https://arxiv.org/abs/2102.12043) qaoa on mixed spin glass models...?
-* Perceptron model
-    * Not a spin glass.
+
+* More about AMP and Lipschitz schemes: [[GJ21]](https://projecteuclid.org/journals/annals-of-probability/volume-49/issue-1/The-overlap-gap-property-and-approximate-message-passing-algorithms-for/10.1214/20-AOP1448.pdf), [[Sellke 2021]](https://arxiv.org/pdf/2105.03506.pdf), and [[BS21]](https://arxiv.org/pdf/2110.07847)
+* Low-degree methods and Boolean circuits, see [[GJW21]](https://arxiv.org/abs/2109.01342v1))
+* Sum-of-squares: see [[GJJPR21]](https://ieeexplore.ieee.org/abstract/document/9317995/) and [[KB19]](https://link.springer.com/article/10.1007/s10107-020-01558-2)
+* Mixing time bounds:
+    * for Ising models: [[BJ18]](https://link.springer.com/article/10.1007/s00220-018-3152-6), [[BB19]](https://www.sciencedirect.com/science/article/pii/S0022123619300278), [[EFZ20]](https://arxiv.org/abs/2007.08200)
+    * for spherical models: [[JG19]](https://projecteuclid.org/journalArticle/Download?urlId=10.1214%2F18-AIHP897)
 
 ---
 
