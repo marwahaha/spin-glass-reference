@@ -163,10 +163,11 @@ A rewrite of the Parisi-Variational Principle in terms of a _functional_ min-max
 * Pure Spherical $$p$$-spin glass is 2-RSB at $$\beta = \infty$$ [[AZ18]](https://arxiv.org/pdf/1802.02991.pdf). (for all $$p \geq 2$$???)
 * The analytic behavior of the mixture polynomial determines when the mixed spherical $$p$$-spin glass is fRSB [[Proposition-1, Sub21]](https://arxiv.org/abs/1812.04588).
 * The TAP equations for mixed spherical $$p$$-spin glasses are to be solved on the _ball_ $$\mathcal{B}^n$$ (and not the sphere) [[Sub21a]](https://arxiv.org/abs/2111.07132), [[Sub21b]](https://arxiv.org/abs/2111.07134).
-* The Free-Energy "landscape" of spherical $$p$$-spin glasses (mixed and pure) is well understood by studying the first two moments of the number of critical points of the Hessian using the Kac-Rice formula as a dictionary between the geometry of the problem at hand and the random matrix (the Hessian) [[Sub16]](https://arxiv.org/abs/1804.10576).
-* An explicit and analytic expression for the free energy is given using a nice simplification of the _Crisanti-Sommers_ representation known as the Chen-Sen representation [[CS17]](https://arxiv.org/abs/1512.08492). In the event of fRSB, this formula simply becomes an integral over (roughly) the mixture polynomial [[Proposition-2, Sub21]](https://arxiv.org/pdf/1812.04588.pdf).
+* The free-energy "landscape" of spherical $$p$$-spin glasses (mixed and pure) is well understood by studying the first two moments of the number of critical points of the Hessian using the Kac-Rice formula as a dictionary between the geometry of the problem at hand and the random matrix (the Hessian) [[Sub16]](https://arxiv.org/abs/1804.10576).
+* An explicit and analytic expression for the free energy is given using a nice simplification of the _Crisanti-Sommers_ representation known as the Chen-Sen representation [[CS17]](https://arxiv.org/abs/1512.08492); see also [[JT17]](https://link.springer.com/article/10.1007/s00220-017-2864-3). In the event of fRSB, this formula simply becomes an integral over (roughly) the mixture polynomial [[Proposition-2, Sub21]](https://arxiv.org/pdf/1812.04588.pdf).
 * [[JB21]](https://arxiv.org/abs/2104.08299) study a shattering transition.
 * See also [[AB13]](https://projecteuclid.org/journals/annals-of-probability/volume-41/issue-6/Complexity-of-random-smooth-functions-on-the-high-dimensional-sphere/10.1214/13-AOP862.pdf) and [[ABC13]](https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpa.21422) for other papers using the Kac-Rice approach.
+* fRSB is known for some models due to Talagrand (for example see [[Talagrand 2005]](https://eds.s.ebscohost.com/eds/pdfviewer/pdfviewer?vid=1&sid=e553dbeb-b9e9-4bd1-a4c3-8c3d11385e20%40redis)).
 
 
 # Open questions
