@@ -183,8 +183,6 @@ It's conjectured that $$p$$-XOR, $$p > 2$$, is $$k$$RSB for some value $$k>0$$, 
 
 # Algorithms
 
-This section is still in progress.
-
 * Lower bounds from Overlap Gap Property (OGP)
     * [[Gamarnik 2021]](https://www.pnas.org/doi/pdf/10.1073/pnas.2108492118) survey on OGPs
 * Algorithms exploiting fRSB
