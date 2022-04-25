@@ -186,12 +186,12 @@ It's conjectured that $$p$$-XOR, $$p > 2$$, is $$k$$RSB for some value $$k>0$$, 
 This section is still in progress.
 
 * Lower bounds from Overlap Gap Property (OGP)
-    * [[Gamarnik'21]](https://www.pnas.org/doi/pdf/10.1073/pnas.2108492118) survey on OGPs
+    * [[Gamarnik 2021]](https://www.pnas.org/doi/pdf/10.1073/pnas.2108492118) survey on OGPs
 * Algorithms exploiting fRSB
-    * [[Subag21]](https://arxiv.org/abs/1812.04588) - An algorithm that outputs near ground states of mixed spherical $$p$$-spin glasses under fRSB.
-    * [[El Alaoui-Montanari-Sellke'20]](https://arxiv.org/abs/2001.00904) same, but for Ising spins: message passing algorithm to find near ground states of fRSB Ising spin glasses
-    * [[El Alaoui-Montanari'20]](https://arxiv.org/abs/2009.11481) Implementation of the ideas above. Numerics for 2-XORSAT (SK) and 3-XORSAT (3-spin glass), the latter using [auffinger2016parisi](https://arxiv.org/abs/1606.05335) method.
-    * [claes2021instance](https://arxiv.org/abs/2102.12043) qaoa on mixed spin glass models...?
+    * [[Subag 2021]](https://arxiv.org/abs/1812.04588) - An algorithm that outputs near ground states of mixed spherical $$p$$-spin glasses under fRSB.
+    * [[AMS20]](https://arxiv.org/abs/2001.00904) same, but for Ising spins: message passing algorithm to find near ground states of fRSB Ising spin glasses
+    * [[AM20]](https://arxiv.org/abs/2009.11481) Implementation of the ideas above. Numerics for 2-XORSAT (SK) and 3-XORSAT (3-spin glass), the latter using the method in [[AC16]](https://arxiv.org/abs/1606.05335).
+    * [[CD21]](https://arxiv.org/abs/2102.12043) studies the QAOA running to minimize mixed-spin Ising Hamiltonians.
 
 * More about AMP and Lipschitz schemes: [[GJ21]](https://projecteuclid.org/journals/annals-of-probability/volume-49/issue-1/The-overlap-gap-property-and-approximate-message-passing-algorithms-for/10.1214/20-AOP1448.pdf), [[Sellke 2021]](https://arxiv.org/pdf/2105.03506.pdf), and [[BS21]](https://arxiv.org/pdf/2110.07847)
 * Low-degree methods and Boolean circuits, see [[GJW21]](https://arxiv.org/abs/2109.01342v1))
