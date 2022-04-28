@@ -200,4 +200,6 @@ It's conjectured that $$p$$-XOR, $$p > 2$$, is $$k$$RSB for some value $$k>0$$, 
 
 ---
 
+Primarily written with Juspreet Singh Sandhu, Chris Jones, and Jonathan Shi.
+
 More to add? Email me at [kmarw@uchicago.edu](mailto:kmarw@uchicago.edu).
