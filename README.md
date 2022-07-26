@@ -198,6 +198,15 @@ It's conjectured that $$p$$-XOR, $$p > 2$$, is $$k$$RSB for some value $$k>0$$, 
     * for Ising models: [[BJ18]](https://link.springer.com/article/10.1007/s00220-018-3152-6), [[BB19]](https://www.sciencedirect.com/science/article/pii/S0022123619300278), [[EFZ20]](https://arxiv.org/abs/2007.08200)
     * for spherical models: [[JG19]](https://projecteuclid.org/journalArticle/Download?urlId=10.1214%2F18-AIHP897)
 
+
+Other interesting papers:
+* OGP for max k xor https://arxiv.org/pdf/1707.05386.pdf
+* OGP on dense models https://arxiv.org/pdf/2004.12063.pdf
+* AMP algorithms are optimal https://arxiv.org/pdf/2110.07847.pdf
+* random k-SAT phase transition https://arxiv.org/pdf/2106.02129.pdf
+* 1RSB breaking in Max-NAE-SAT https://arxiv.org/pdf/1904.08891.pdf and NAE-SAT https://arxiv.org/pdf/2011.14270.pdf
+* Unbalanced cut problem https://arxiv.org/pdf/1707.09042.pdf
+
 ---
 
 Primarily written with Juspreet Singh Sandhu, Chris Jones, and Jonathan Shi.
