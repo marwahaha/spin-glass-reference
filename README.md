@@ -181,7 +181,7 @@ Define $$P$$ as the Parisi functional. Then
 By [[AMS20]](https://arxiv.org/abs/2001.00904) and [[Sel21]](https://arxiv.org/pdf/2105.03506.pdf), we  know the following things:
 * If $$\gamma_{OPT}$$ is fRSB (i.e. strictly increasing), then $$ALG = OPT$$ (and thus $$\gamma_{ALG}$$ exists.)
 * If $$\gamma_{ALG}$$ exists, then approximate message passing (AMP) algorithms achieve $$ALG$$.
-* If $$\gamma_{ALG}$$ exists, then $\xi(s) = \sum_p c_p s^p$ is such that $$c_2 \ne 0$$.
+* If $$\gamma_{ALG}$$ exists, then $$\xi(s) = \sum_p c_p s^p$$ is such that $$c_2 \ne 0$$.
 
 On even mixed-spin glasses, we know a few more things:
 * If $$ALG \ne OPT$$, then AMP algorithms do NOT achieve OPT. This is regardless of whether $$\gamma_{ALG}$$ exists. Together with above, this implies $$ALG = OPT$$ if and only if AMP is optimal.
