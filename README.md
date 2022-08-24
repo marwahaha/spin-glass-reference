@@ -185,7 +185,7 @@ By [[AMS20]](https://arxiv.org/abs/2001.00904) and [[Sel21]](https://arxiv.org/p
 
 On even mixed-spin glasses, we know a few more things:
 * If $$ALG \ne OPT$$, then AMP algorithms do NOT achieve OPT. This is regardless of whether $$\gamma_{ALG}$$ exists. Together with above, this implies $$ALG = OPT$$ if and only if AMP is optimal.
-* Any overlap-concentrated algorithm will achieve at most $$ALG$$. (This comes from a study of branching OGP; see [[HS21]](https://arxiv.org/pdf/2110.07847.pdf)). For example, any approximately Lipschitz algorithms are overlap concentrated on even mixed-spin glasses.
+* If there's branching OGP, any overlap-concentrated algorithm will achieve at most $$ALG$$. (This comes from a study of branching OGP; see [[HS21]](https://arxiv.org/pdf/2110.07847.pdf)). For example, any approximately Lipschitz algorithms are overlap concentrated on even mixed-spin glasses.
 
 # Open questions
 
