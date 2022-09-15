@@ -61,13 +61,19 @@ $$
 GSED = min_{\gamma} P(\gamma)
 $$
 
-If $$\gamma$$ is constant, this is **replica symmetric**.
-If there is a point where $$\gamma$$ is increasing, we call it **replica symmetry breaking**.
+If $$\gamma$$ is constant, this is **replica symmetric* (RS).
+If there is a point where $$\gamma$$ is increasing, we call it **replica symmetry breaking** (RSB).
 
-If there are *exactly* $$k$$ jumps, then we call it $$k$$-RSB. (For example, 1-RSB, 2-RSB, ...)
+If $$\gamma$$ takes *exactly* $$k$$ nonzero values, then we call it $$k$$-RSB. (For example, 1-RSB, 2-RSB, ...)
 
-* If there are an infinite number of increasing points, we call it $$\infty$$-RSB. There could be countably many jumps (in $$\mathbb{N}$$) or uncountably many (in $$\mathbb{R}$$).
+If it is not RS, and not $$k$$-RSB for some constant $$k$$, then $$\gamma$$ takes on an infinite number of nonzero values. We call this $$\infty$$-RSB. But this could mean lots of things:
+* There could be countably many values (in $$\mathbb{N}$$) or uncountably many (in $$\mathbb{R}$$).
+* There could be some inputs in $$[0,a]$$ and $$[b,1]$$ where $$\gamma$$ is strictly increasing, yet constant from $$[a,b]$$.
 * If $$\gamma$$ is strictly increasing in $$[0,1]$$, we call it Full-RSB or fRSB.
+* Some works use the language $$\ell$$-fRSB to count the number of disjoint regions in $$[0,1]$$ that are strictly increasing; see for example [[AZ22]](https://arxiv.org/pdf/2209.03866.pdf).
+
+We can view the $$\gamma$$ like an unnormalized cumulative distribution function; i.e. $$\gamma(0_-) = 0$$. Every PDF will have support at least at one point (perhaps at zero). Every additional point is considered "replica symmetry breaking".
+
 
 # CSPs and diluted spin glasses
 
@@ -106,9 +112,9 @@ What is an OGP? See [[Gamarnik21]](https://arxiv.org/abs/2109.14409) for a refer
 
 If there is an OGP, then algorithms that do not see the whole graph (i.e., **local algorithms** with at most $$\log N$$ depth) will not find optimal solutions. In fact, all algorithms that are insensitive to small changes in the input will be obstructed by an OGP. See [[CLSS21]](https://arxiv.org/abs/2108.06049).
 
-For the spin glass problems, an OGP means there is some interval $$[a,b]$$ where $$0 < a < b < 1$$ where $$\gamma$$ is constant, non-zero and strictly less than 1. We typically think about OGP at low temperature.
+For the spin glass problems, an OGP means there is some interval $$[a,b]$$ where $$0 < a < b < 1$$ where $$\gamma$$ is constant, yet $$\gamma$$ changes value **both** in $$[0,a]$$ and also in $$[b,1]$$. We typically think about OGP at low temperature.
 
-**A key takeaway:** If the Parisi minimizer is $$0$$-RSB or fRSB, then there is no overlap gap property. Otherwise, there is an OGP!
+**A key takeaway:** If the Parisi minimizer is RS or fRSB, then there is no overlap gap property. Otherwise, there is an OGP, even if it is $$\infty$$-RSB!
 
 We also know that some CSPs exhibit an OGP, because the associated dense spin glass model does. This connection is usually done via the Guerra-Tonnineli interpolation.
 
@@ -241,6 +247,16 @@ Other interesting papers:
 * random k-SAT phase transition https://arxiv.org/pdf/2106.02129.pdf
 * 1RSB breaking in Max-NAE-SAT https://arxiv.org/pdf/1904.08891.pdf and NAE-SAT https://arxiv.org/pdf/2011.14270.pdf
 * Unbalanced cut problem https://arxiv.org/pdf/1707.09042.pdf
+
+
+
+### Phase diagrams
+
+For all mixed-spin models on the hypercube, we know that at high enough temperature, it is RS (need a citation), and at zero temperature, it is $$\infty-RSB$$ [[ACZ17]](https://par.nsf.gov/servlets/purl/10156904). But we suspect more:
+
+On the SK model, we know of the dAT line (?) that suggests that at there is a single transition from RS to something else at inverse temperature $$\beta = 1$$. We know the something else is not RS, and we suspect it is fRSB.
+
+For other pure $$p$$-spin models where $$p > 2$$, we know of a second transition [[Gardner85]](https://www.sciencedirect.com/science/article/abs/pii/0550321385903748?via%3Dihub). At the lowest temperature, we expect there to be gaps in the support of increasing points in $$\gamma$$ (i.e. overlap gaps); this is proven for even $$p$$. I'm not sure what happens at the intermediate temperature.
 
 ---
 
