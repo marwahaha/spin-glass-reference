@@ -108,7 +108,7 @@ This is known in several settings:
 * [[PT14]](https://arxiv.org/abs/math/0405357) - This paper _upper bounds_ the limiting value of the fraction of satisfied clauses of _any_ CSP with $$\alpha n$$ clauses ($$\alpha$$ is any constant) by the free energy of a peculiar dense mean-field model (which can be seen as a slight generalization of the SK model). The latter model's free energy is explicitly calculated in _any_ regime (RS/$$k$$-RSB/fRSB). However, the paper cannot provide lower bounds, and so it does not capture the exact limiting value.
 
 ## OGPs for CSPs
-What is an OGP? See [[Gamarnik21]](https://arxiv.org/abs/2109.14409) for a reference.
+What is an OGP? See [[Gamarnik21]](https://arxiv.org/abs/2109.14409) for a reference, or [this talk](http://madhu.seas.harvard.edu/talks/2019/Princeton-Opt-Local.pdf) for a decent exposition.
 
 If there is an OGP, then algorithms that do not see the whole graph (i.e., **local algorithms** with at most $$\log N$$ depth) will not find optimal solutions. In fact, all algorithms that are insensitive to small changes in the input will be obstructed by an OGP. See [[CLSS21]](https://arxiv.org/abs/2108.06049).
 
