@@ -248,7 +248,7 @@ Other interesting papers:
 * 1RSB breaking in Max-NAE-SAT https://arxiv.org/pdf/1904.08891.pdf and NAE-SAT https://arxiv.org/pdf/2011.14270.pdf
 * Unbalanced cut problem https://arxiv.org/pdf/1707.09042.pdf
 
-theres also a new book out: ["spin glass theory and far beyond"](https://dissyskcl.github.io/news/rsb40/) with most chapters on arXiv: 
+theres also a new book out: ["spin glass theory and far beyond"](https://dissyskcl.github.io/news/rsb40/) with most chapters on arXiv.
 
 
 ### Phase diagrams
